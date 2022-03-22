@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.main {
+  background-image: url("../../assets/images/Frame.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 700px;
+  margin-top: 10%;
+  width: 100%;
+  margin: 10% auto 0 auto;
+}
+.not-found {
+  font-family: "Bebas Neue", cursive;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 70px;
+  text-align: center;
+  color: #333333;
+  text-transform: uppercase;
+  position: relative;
+  top: 591px;
+}
+.go-back {
+  font-family: "Bebas Neue", cursive;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #59c3fb;
+  position: relative;
+  top: 606px;
+}
+.go-back a {
+  text-decoration: none;
+}
+.go-back a:hover {
+  cursor: pointer;
+}
+@media (max-width: 1440px) {
+  .main {
+    margin-top: 4%;
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    width: 550px;
+    height: 582px;
+    margin-top: 7%;
+    background-size: contain;
+  }
+  .not-found {
+    top: 544px;
+  }
+  .go-back {
+    top: 555px;
+  }
+}
+@media (max-width: 600px) {
+  .main {
+    width: 260px;
+    height: 296px;
+    margin-top: -24%;
+    background-size: contain;
+  }
+  .not-found {
+    top: 439px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .go-back {
+    top: 452px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
