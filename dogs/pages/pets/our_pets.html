@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="our_pets.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <h1> <a href="../main/index.html">Cozy House</a></h1>
+        <p>Shelter for pets in Boston</p>
+      </div>
+      <nav>
+        <ul class="nav">
+          <li class="nav_item"><a href="../main/index.html">About the shelter</a></li>
+          <li class="nav_item"><a href="#">Our pets</a></li>
+          <li class="nav_item"><a href="#help">Help the shelter</a></li>
+          <li class="nav_item"><a href="#footer">Contacts</a></li>
+        </ul>
+        <div class="iconMenu"><span></span></div>
+      </nav>
+
+      <div class="popup">
+        <div class="response-menu">
+          <h1>Cozy House </h1>
+              <p>Shelter for pets in Boston</p>
+          <ul>
+            <li><a href="../main/index.html">About the shelter</a></li>
+            <li><a href="#">Our pets</a></li>
+            <li><a href="#">Help the shelter</a></li>
+            <li><a href="#footer">Contacts</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="friends">
+      <div id='popup' class="popup_cards">
+        <div class="popup_body">
+          <div class="popup_content">
+            <div class="close_arrow">
+              <div class="popup_close close-popup">X</div>
+            </div>
+            <div class="animals_content">
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="friends_title">
+          <h3>Our friends who <br> are looking for a house</h3>
+        </div>
+
+        <div class="wrapper">
+          <div class="slider-wrapper">
+          </div>
+        </div>
+
+        <div class="friends_buttons">
+          <button class="prev_prev">
+            <div class="icon_prev_prev"> </div>
+          </button>
+          <button class="prev">
+            <div class="icon_prev"> </div>
+          </button>
+          <div class="center">
+            <div id="count"></div>
+          </div>
+          <button class="next">
+            <div class="icon_next"> </div>
+          </button>
+          <button class="next_next">
+            <div class="icon_next_next"> </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer_container">
+        <div class="footer_questions">
+          <h3>For questions and suggestions</h3>
+          <div class="email_container">
+            <div class="icon_email"></div>
+            <a href="mailto:email@shelter.com">email@shelter.com</a>
+
+          </div>
+          <div class="phone_container">
+            <div class="icon_phone"></div>
+            <a href="tel:+13 674 567 75 54">+13 674 567 75 54</a>
+          </div>
+
+        </div>
+        <div class="footer_waiting">
+          <h3>We are waiting for your visit</h3>
+          <div class="boston_container">
+            <div class="icon_map"></div>
+            <a href="https://goo.gl/maps/ywi22Goj73DEjRGT6">
+              <h4>1 Central Street, Boston <br> (entrance from the store)</h4>
+            </a>
+          </div>
+          <div class="africa_container">
+            <div class="icon_map"></div>
+            <a href="https://goo.gl/maps/ywi22Goj73DEjRGT6">
+              <h4>18 South Park, London </h4>
+            </a>
+          </div>
+        </div>
+        <div class="footer_img"><img src="../../assets/images/footer-puppy.png" alt="puppy"></div>
+      </div>
+    </div>
+  </footer>
+  <script src="our_pets.js"></script>
+  <script src="popup.js"></script>
+  <script src="popup&slider.js"></script>
+  <script src="buttons.js"></script>
+</body>
+
+</html>

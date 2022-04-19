@@ -1,0 +1,142 @@
+.donation {
+  padding-bottom: 64px;
+  background-color: #f6f6f6;
+}
+
+.container_donation {
+  padding: 0px 1px 15px 9px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+
+.text_donation {
+  padding-top: 84px;
+  width: 24rem;
+}
+
+.img_donation {
+  padding-top: 99px;
+  padding-right: 28px;
+}
+
+.img_donation img{
+ width: 100%;
+}
+
+h5 {
+  font-size: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  margin: 20px 0;
+  letter-spacing: 1px;
+}
+
+.button_card {
+  border: 1px solid #F1CDB3;
+  width: 349px;
+  height: 43px;
+  background-color: #f1cdb3;
+  border-radius: 9px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 1s;
+}
+
+.button_card:hover {
+  box-shadow: 0 0 30px black;
+  transform: scale(1.1);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.icon_card {
+  background-image: url(../../assets/icons/credit-card.svg);
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.number_card {
+ color: #545454;;
+  font-size: 20px;
+  font-family: Georgia;
+  font-weight: 400;
+}
+
+.text_donation p {
+  margin: 21px 0;
+  line-height: 18px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.text_donation h5 {
+  padding: 5px 0 0 0;
+}
+
+@media screen and (max-width: 860px) {
+  .donation {
+    padding-bottom: 2px;
+  }
+
+  .img_donation {
+    padding-top: 37px;
+    padding-bottom: 75px;
+  }
+
+
+
+
+  .container_donation {
+    padding: 0px 0px 15px 7px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+
+  .text_donation {
+    padding-top: 0px;
+  }
+
+  .text_donation h3 {
+    padding-top: 40px;
+    line-height: 35px;
+  }
+  .button_card {
+    width: 281px;
+    height: 43px;
+  }
+
+  h5 {
+    letter-spacing: 0;
+  }
+
+  .number_card {
+    font-size: 15px;
+  }
+
+  .img_donation img {
+    width: 17rem;
+  }
+
+  .img_donation {
+    padding-top: 15px;
+    padding-bottom: 33px;
+  }
+
+  .container_donation {
+    padding: 0 10px 0 16px;
+  }
+  .text_donation h5 {
+    padding: 0 0 3px 0;
+}
+}
