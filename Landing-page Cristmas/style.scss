@@ -35,9 +35,7 @@ $border: .1rem solid rgba(255, 255, 255, .2);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
     gap: 2rem;
-
 }
-
 
 html {
     font-size: 62.5%;
