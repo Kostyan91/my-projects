@@ -19,8 +19,6 @@ sliderItems.forEach((e, i) => {
 })
 
 
-
-
 btnNext.addEventListener('click', () => {
   showNextSlide(next)
 })
