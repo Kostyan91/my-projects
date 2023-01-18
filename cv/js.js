@@ -6,7 +6,6 @@ const btnPrev = document.querySelector('#prev')
 const iconMenu = document.querySelector(".icon_menu");
 const responseMenu = document.querySelector(".response-menu");
 const popup = document.querySelector(".popup");
-const body = document.querySelector("body");
 
 
 let next = 'next'
