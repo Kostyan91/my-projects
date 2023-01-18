@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,300;1,400;1,500&display=swap");
+
+* {
+    font-family: "Nunito";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.5s;
+    scroll-behavior: smooth;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+    --h3: blue;
+    --h4: blue;
+}
+
+h3{
+    color: var(--h3);
+}
+
+a,p {
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+}
+
+p:hover {
+    color: red;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    cursor: pointer;
+}
+
+h3 {
+    padding-bottom: .7rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+h4 {
+    color: var(--h4);
+    font-size: 1.1rem;
+    padding: .3rem 0;
+}
+
+h4:hover {
+    color: #00ff00;
+}
+
+h3,
+h4::first-letter {
+    text-transform: uppercase;
+}
+
+h3:hover {
+    cursor: pointer;
+    color: black;
+    transform: scale(1.2);
+}
+
+body {
+    margin: 2rem;
+    min-height: 100vh;
+}
+
+main {
+    margin: 0 auto;
+    padding: 0 1rem;
+    box-shadow: 0 0 30px black;
+    max-width: 64rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: linear-gradient(90deg, #814096, #f83292);
+    gap: 1rem;
+}
+
+.section {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.info-img {
+    margin: 0.5rem 2rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.info-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-img img:hover {
+    transform: scale(1.1);
+}
+
+.contacts{
+    position: relative;
+}
+.contacts ul li {
+    list-style: none;
+    padding: 0.2rem 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.fa {
+    cursor: pointer;
+    text-align: center;
+    height: 1.5rem;
+    transition-duration: 0.5s;
+}
+
+.fa:hover {
+    color: blue;
+    transition: all 0.5s;
+    transform: scale(1.1);
+}
+
+.contacts-link {
+    padding: 0.1rem 0;
+    display: block;
+    font-size: 1rem;
+}
+
+.contacts-link:hover i {
+    color: blue;
+    transition: all 0.5s;
+    padding-right: 2rem;
+}
+
+.courses,
+.skills,
+.experience,
+.languages,
+.contacts,
+.about,
+.my_interests {
+    padding-top: .7rem;
+    border-bottom: 1px solid black;
+}
+
+.courses p {
+    text-transform: capitalize;
+}
+
+.my_interests-slider {
+    border: 1px solid;
+    box-shadow: 0 0 15px black;
+    margin: 0 auto;
+    max-width: 18rem;
+    height: 11rem;
+}
+
+.btn {
+    width: 2rem;
+    font-size: 1.5rem;
+}
+
+.my_interests-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.my_interests-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.skills ul {
+    padding: 0 3rem;
+    list-style-type: circle;
+}
+
+li:hover {
+    cursor: pointer;
+    color: blue;
+    transform: scale(1.2);
+}
+
+.section-projects {
+    display: flex;
+    justify-content: space-evenly
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 0.1rem solid black;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+@media (max-width: 768px) {
+
+    html {
+        font-size: 85%;
+    }
+
+    .main {
+        grid-template-columns: none;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 550px) {
+
+    html {
+        font-size: 65%;
+    }
+
+    .active-burger {
+        transform: translate(17%, -41%);
+        transition: all ease 0.7s;
+    }
+}
