@@ -7,7 +7,6 @@
     width: 15rem;
     height: auto;
     top: 95px;
-    transition: all ease 1s;
     transform: translate(550%, 20%);
     z-index: 5;
     line-height: 1;
@@ -106,5 +105,10 @@
       transform: translate(17%, -59%);
       transition: all ease 0.7s;
   }
+  .icon_menu {
+      width: 20px;
+      height: 10px;
+     
+    }
 }
 

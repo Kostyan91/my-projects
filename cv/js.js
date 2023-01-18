@@ -3,6 +3,12 @@ const slider = document.querySelector('.my_interests-slider')
 const sliderItems = Array.from(slider.children)
 const btnNext = document.querySelector('#next')
 const btnPrev = document.querySelector('#prev')
+const iconMenu = document.querySelector(".icon_menu");
+const responseMenu = document.querySelector(".response-menu");
+const popup = document.querySelector(".popup");
+const body = document.querySelector("body");
+
+
 let next = 'next'
 let prev = 'prev'
 
@@ -22,7 +28,6 @@ sliderItems.forEach((e, i) => {
 btnNext.addEventListener('click', () => {
   showNextSlide(next)
 })
-
 
 btnPrev.addEventListener('click', () => {
   showNextSlide(prev)
@@ -51,18 +56,11 @@ function showNextSlide(dicection) {
 
 }
 
-
-const iconMenu = document.querySelector(".icon_menu");
-const responseMenu = document.querySelector(".response-menu");
-const popup = document.querySelector(".popup");
-const body = document.querySelector("body");
-
-
-iconMenu.addEventListener("click", (e) => {
+iconMenu.addEventListener("click", () => {
   popup.classList.toggle("open");
   iconMenu.classList.toggle("active1");
   responseMenu.classList.toggle("active-burger");
-});
+})
 
 popup.addEventListener("click", (e) => {
   if (!e.target.closest(".response-menu")) {
@@ -70,9 +68,7 @@ popup.addEventListener("click", (e) => {
     popup.classList.remove("open");
     iconMenu.classList.remove("active1");
   }
-  console.log(e.target);
-  // }
-});
+})
 
 
 
