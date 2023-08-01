@@ -29,9 +29,6 @@ a,p {
     color: black;
 }
 
-p:hover {
-    color: red;
-}
 
 h1,
 h2,
@@ -59,12 +56,6 @@ h4:hover {
 h3,
 h4::first-letter {
     text-transform: uppercase;
-}
-
-h3:hover {
-    cursor: pointer;
-    color: black;
-    transform: scale(1.2);
 }
 
 body {
@@ -156,45 +147,23 @@ main {
     text-transform: capitalize;
 }
 
-.my_interests-slider {
-    border: 1px solid;
-    box-shadow: 0 0 15px black;
-    margin: 0 auto;
-    max-width: 18rem;
-    height: 11rem;
-}
-
-.btn {
-    width: 2rem;
-    font-size: 1.5rem;
-}
-
-.my_interests-controls {
+.my_interests ul {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row-reverse;
-    text-align: center;
+    justify-content: space-evenly;
+  }
+
+.my_interests ul li {
+    list-style: none;
 }
 
-.hidden {
-    display: none;
-}
-
-.my_interests-slider img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 .skills ul {
     padding: 0 3rem;
-    list-style-type: circle;
+    font-weight: bold;
 }
 
 li:hover {
     cursor: pointer;
-    color: blue;
     transform: scale(1.2);
 }
 
@@ -222,6 +191,11 @@ footer {
         grid-template-columns: none;
         flex-wrap: wrap;
     }
+    .my_interests ul {
+        display: flex;
+        flex-direction: column;
+      }
+      
 }
 
 @media (max-width: 550px) {

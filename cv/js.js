@@ -1,59 +1,59 @@
 
-const slider = document.querySelector('.my_interests-slider')
-const sliderItems = Array.from(slider.children)
-const btnNext = document.querySelector('#next')
-const btnPrev = document.querySelector('#prev')
+// const slider = document.querySelector('.my_interests-slider')
+// // const sliderItems = Array.from(slider.children)
+// const btnNext = document.querySelector('#next')
+// const btnPrev = document.querySelector('#prev')
 const iconMenu = document.querySelector(".icon_menu");
 const responseMenu = document.querySelector(".response-menu");
 const popup = document.querySelector(".popup");
 
 
-let next = 'next'
-let prev = 'prev'
+// let next = 'next'
+// let prev = 'prev'
 
-sliderItems.forEach((e, i) => {
+// sliderItems.forEach((e, i) => {
 
-  if (i !== 0) e.classList.add('hidden')
+//   if (i !== 0) e.classList.add('hidden')
 
-  e.dataset.index = i
-  sliderItems[0].setAttribute('data-active', '')
+//   e.dataset.index = i
+//   sliderItems[0].setAttribute('data-active', '')
 
-  e.addEventListener('click', () => {
-    showNextSlide(next)
-  })
-})
-
-
-btnNext.addEventListener('click', () => {
-  showNextSlide(next)
-})
-
-btnPrev.addEventListener('click', () => {
-  showNextSlide(prev)
-})
+//   e.addEventListener('click', () => {
+//     showNextSlide(next)
+//   })
+// })
 
 
+// btnNext.addEventListener('click', () => {
+//   showNextSlide(next)
+// })
 
-function showNextSlide(dicection) {
-  const currentSlide = slider.querySelector('[data-active]')
-  const currentSlideIndex = +currentSlide.dataset.index
-
-  currentSlide.classList.add('hidden')
-  currentSlide.removeAttribute('data-active')
-
-  let nextSlideIndex
-  if (dicection === next) {
-    nextSlideIndex = currentSlideIndex + 1 === sliderItems.length ? 0 : currentSlideIndex + 1
-  } else if (dicection === prev) {
-    nextSlideIndex = currentSlideIndex === 0 ? sliderItems.length - 1 : currentSlideIndex - 1
-  }
-
-  const nextSlide = slider.querySelector(`[data-index="${nextSlideIndex}"]`)
-  nextSlide.classList.remove('hidden')
-  nextSlide.setAttribute('data-active', '')
+// btnPrev.addEventListener('click', () => {
+//   showNextSlide(prev)
+// })
 
 
-}
+
+// function showNextSlide(dicection) {
+//   const currentSlide = slider.querySelector('[data-active]')
+//   const currentSlideIndex = +currentSlide.dataset.index
+
+//   currentSlide.classList.add('hidden')
+//   currentSlide.removeAttribute('data-active')
+
+//   let nextSlideIndex
+//   if (dicection === next) {
+//     nextSlideIndex = currentSlideIndex + 1 === sliderItems.length ? 0 : currentSlideIndex + 1
+//   } else if (dicection === prev) {
+//     nextSlideIndex = currentSlideIndex === 0 ? sliderItems.length - 1 : currentSlideIndex - 1
+//   }
+
+//   const nextSlide = slider.querySelector(`[data-index="${nextSlideIndex}"]`)
+//   nextSlide.classList.remove('hidden')
+//   nextSlide.setAttribute('data-active', '')
+
+
+// }
 
 iconMenu.addEventListener("click", () => {
   popup.classList.toggle("open");
